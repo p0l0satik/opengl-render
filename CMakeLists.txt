@@ -21,6 +21,11 @@ set(LIBS glfw X11 Xrandr Xinerama Xi Xxf86vm Xcursor GL dl pthread)
 add_library(GLAD src/glad.c)
 set(LIBS ${LIBS} GLAD)
 
-add_executable(rt src/orange.cpp src/Bitmap.h src/Bitmap.cpp)
+add_executable(rt src/orange.cpp src/Bitmap.cpp)
 
 target_link_libraries(rt ${LIBS})
+
+file(GLOB SHADERS "src/shaders/*.glsl")
+foreach(SHADER ${SHADERS})
+    file(COPY ${SHADER} DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/shaders)
+endforeach(SHADER)
