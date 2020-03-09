@@ -21,7 +21,7 @@ set(LIBS glfw X11 Xrandr Xinerama Xi Xxf86vm Xcursor GL dl pthread)
 add_library(GLAD src/glad.c)
 set(LIBS ${LIBS} GLAD)
 
-add_executable(rt src/orange.cpp src/Bitmap.cpp)
+add_executable(rt src/picture.cpp src/Bitmap.cpp)
 
 target_link_libraries(rt ${LIBS})
 

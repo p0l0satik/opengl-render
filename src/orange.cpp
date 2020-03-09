@@ -79,6 +79,7 @@ int main()
     // render
     // ------
     // clean and fill color
+    
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
@@ -87,6 +88,8 @@ int main()
     glBindVertexArray(VAO);
     glDrawArrays(GL_TRIANGLES, 0, 3);
     glBindVertexArray(0);
+
+    
 
     // read pixels and save to BMP
     // ---------------------------

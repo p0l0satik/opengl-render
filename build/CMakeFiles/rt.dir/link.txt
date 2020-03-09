@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/rt.dir/src/picture.cpp.o CMakeFiles/rt.dir/src/Bitmap.cpp.o  -o rt external/glfw-3.3.2/src/libglfw3.a -lX11 -lXrandr -lXinerama -lXi -lXxf86vm -lXcursor -lGL -ldl -lpthread libGLAD.a /usr/lib/x86_64-linux-gnu/librt.so -lm /usr/lib/x86_64-linux-gnu/libX11.so -lpthread -ldl  -ldl
